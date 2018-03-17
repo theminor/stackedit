@@ -21047,17 +21047,7 @@ function() {
    onEnd: function() {},
    template: [ '<div class="popover tour">', '   <div class="arrow"></div>', '   <h3 class="popover-title"></h3>', '   <div class="popover-content"></div>', '   <nav class="popover-navigation">', '       <button class="btn btn-primary" data-role="next">Next</button>', '       <button class="btn btn-default" data-role="end">OK</button>', "   </nav>", "</div>" ].join("")
   });
-  e.addSteps([ {
-   element: ".navbar-inner",
-   title: "StackEdit 4 is deprecated",
-   content: [ "<p><b>StackEdit 5</b> is now ready for production!</p>", '<p>If you want to migrate, <a href="#" class="action-export-docs-tour">click here</a> to export a backup of your files.</p>', "<p>To import the backup in StackEdit 5, go to Menu > More > Import workspace backup.</p>", '<p><a href="app" target="_blank">Open StackEdit 5 now!</a></p>', "You can always click <b>OK</b> to continue with StackEdit 4." ].join(""),
-   placement: "bottom",
-   onShown: function() {
-    t(".action-export-docs-tour").click(function() {
-     i.saveAs(JSON.stringify(n), "StackEdit local storage.json");
-    });
-   }
-  } ]), e.start(), t(".action-welcome-tour").click(function() {
+  e.start(), t(".action-welcome-tour").click(function() {
    e.restart();
   });
  }, s;
