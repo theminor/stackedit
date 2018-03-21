@@ -31,7 +31,8 @@ define([], function() {
 	constants.COUCHDB_URL = 'https://stackedit.smileupps.com/documents';
 
 	// Site dependent
-	constants.BASE_URL = "http://localhost/";
+	// constants.BASE_URL = "http://localhost/";
+	constants.BASE_URL = location.origin + '/';
 	constants.GOOGLE_CLIENT_ID = '241271498917-lev37kef013q85avc91am1gccg5g8lrb.apps.googleusercontent.com';
 	constants.GITHUB_CLIENT_ID = 'e47fef6055344579799d';
 	constants.GATEKEEPER_URL = "https://stackedit-gatekeeper-localhost.herokuapp.com/";
