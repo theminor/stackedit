@@ -7230,7 +7230,7 @@ var saveAs = saveAs || function(e) {
  e.TEMPORARY_FILE_INDEX = "file.tempIndex", e.WELCOME_DOCUMENT_TITLE = "Hello!", 
  e.DOWNLOAD_IMPORT_URL = "/downloadImport", e.PICASA_IMPORT_IMG_URL = "/picasaImportImg", 
  e.SSH_PUBLISH_URL = "/sshPublish", e.PDF_EXPORT_URL = "/pdfExport", e.COUCHDB_URL = "https://stackedit.smileupps.com/documents", 
- e.BASE_URL = "http://localhost/", e.GOOGLE_CLIENT_ID = "241271498917-lev37kef013q85avc91am1gccg5g8lrb.apps.googleusercontent.com", 
+ e.BASE_URL = location.origin + "/", e.GOOGLE_CLIENT_ID = "241271498917-lev37kef013q85avc91am1gccg5g8lrb.apps.googleusercontent.com", 
  e.GITHUB_CLIENT_ID = "e47fef6055344579799d", e.GATEKEEPER_URL = "https://stackedit-gatekeeper-localhost.herokuapp.com/", 
  e.TUMBLR_PROXY_URL = "https://stackedit-tumblr-proxy-local.herokuapp.com/", e.WORDPRESS_CLIENT_ID = "23361", 
  e.WORDPRESS_PROXY_URL = "https://stackedit-io-wordpress-proxy.herokuapp.com/", 0 === location.hostname.indexOf("stackedit.io") ? (e.BASE_URL = e.MAIN_URL, 
